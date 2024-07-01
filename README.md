@@ -31,8 +31,28 @@ Para o tratamento dos dados antes de considerar os modelos preditivos, considera
 - Variáveis categóricas
 
 
-No caso dos dados faltantes, referimo-nos às colunas Meta_score e Gross. Para cada um dos filmes com estes dados faltantes, consideramos a média da respectiva variável (Meta_score ou Gross) dos filmes que obtiveram o mesmo rating IMDb, e preenchemos o dado faltante com esta média.
+No caso dos dados faltantes, nos referimo às colunas Meta_score e Gross. Para cada um dos filmes com estes dados faltantes, consideramos a média da respectiva variável (Meta_score ou Gross) dos filmes que obtiveram o mesmo rating IMDb, e preenchemos o dado faltante com esta média.
 
 Para o tratamento das variáveis categóricas Director, Star1, Star2, Star3 e Star4, consideramos dicionários (um para os diretores e outro para os atores) nos quais a chave era dada pelo nome, e o valor por um índice único para cada nome. Assim, cada nome nestas variáveis foi substituído pelo respectivo valor obtido do dicionário correspondente.
 
 Após considerar os modelos e transformações acima descritas, achamos que o modelo que melhor se aplicava aos dados foi a Regressão Linear, quando desconsideramos as variáveis dos atores principais do filme. Para isso, consideramos o erro quadrático médio e o parâmetro $R^2$. O primeiro mede o erro obtido ao comparar os valores reais e os valores preditos com os dados separados para teste. O segundo, o coeficiente de determinação, é uma medida estatística que indica quão bem os dados observados se ajustam a um modelo de regressão.
+
+Com o modelo finalmete escolhido, determinamos que o filme com as seguintes caracteristicas  
+{'Series_Title': 'The Shawshank Redemption',
+'Released_Year': '1994',
+'Certificate': 'A',
+'Runtime': '142 min',
+'Genre': 'Drama',
+'Overview': 'Two imprisoned men bond over a number of years,
+finding solace and eventual redemption through acts of common
+decency.',
+'Meta_score': 80.0,
+'Director': 'Frank Darabont',
+'Star1': 'Tim Robbins',
+'Star2': 'Morgan Freeman',
+'Star3': 'Bob Gunton',
+'Star4': 'William Sadler',
+'No_of_Votes': 2343110,
+'Gross': '28,341,469'}
+
+teria uma nota de IMDb de 9,1.  
