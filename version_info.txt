@@ -1,0 +1,6 @@
+Python version: 3.12.3
+
+pandas version: 2.2.0
+seaborn version: 0.13.2
+matplotlib version: 3.8.3
+scikit-learn version: 1.4.1.post1
