@@ -37,13 +37,14 @@ Para o tratamento das variáveis categóricas Director, Star1, Star2, Star3 e St
 
 Após considerar os modelos e transformações acima descritas, achamos que o modelo que melhor se aplicava aos dados foi a Regressão Linear, quando desconsideramos as variáveis dos atores principais do filme. Para isso, consideramos o erro quadrático médio e o parâmetro $R^2$. O primeiro mede o erro obtido ao comparar os valores reais e os valores preditos com os dados separados para teste. O segundo, o coeficiente de determinação, é uma medida estatística que indica quão bem os dados observados se ajustam a um modelo de regressão.
 
-Com o modelo finalmete escolhido, determinamos que o filme com as seguintes caracteristicas  
+Com o modelo finalmete escolhido, determinamos que o filme **The Shawshank Redemption** com as seguintes caracteristicas  
+
 {'Series_Title': 'The Shawshank Redemption',
 'Released_Year': '1994',
 'Certificate': 'A',
 'Runtime': '142 min',
 'Genre': 'Drama',
-'Overview': 'Two imprisoned men bond over a number of years,
+'Overview': 'Two imprisoned men bond over a number of years, 
 finding solace and eventual redemption through acts of common
 decency.',
 'Meta_score': 80.0,
@@ -55,4 +56,6 @@ decency.',
 'No_of_Votes': 2343110,
 'Gross': '28,341,469'}
 
-teria uma nota de IMDb de 9,1.  
+teria uma nota de IMDb de **9,1**.
+
+O arquivo do modelo usado para a previsão é **modelo_imdb.pkl**. O exemplo de como usar esse arquivo para fazer predições do Rating IMDb pode ser encontrado na última seção do arquivo **desafio.ipynb**.
