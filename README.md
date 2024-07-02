@@ -45,7 +45,7 @@ No caso dos dados faltantes, nos referimo às colunas Meta_score e Gross. Para c
 
 Para o tratamento das variáveis categóricas Director, Star1, Star2, Star3 e Star4, consideramos dicionários (um para os diretores e outro para os atores) nos quais a chave era dada pelo nome, e o valor por um índice único para cada nome. Assim, cada nome nestas variáveis foi substituído pelo respectivo valor obtido do dicionário correspondente.
 
-Após considerar os modelos e transformações acima descritas, achamos que o modelo que melhor se aplicava aos dados foi a Regressão Linear, quando desconsideramos as variáveis dos atores principais do filme. Para isso, consideramos o erro quadrático médio e o parâmetro $R^2$. O primeiro mede o erro obtido ao comparar os valores reais e os valores preditos com os dados separados para teste. O segundo, o coeficiente de determinação, é uma medida estatística que indica quão bem os dados observados se ajustam a um modelo de regressão.
+Após considerar os modelos e transformações acima descritas, achamos que o modelo que melhor se aplicava aos dados foi a Random Forest Regressor, quando desconsideramos as variáveis dos atores principais do filme. Para isso, consideramos o erro quadrático médio e o parâmetro $R^2$. O primeiro mede o erro obtido ao comparar os valores reais e os valores preditos com os dados separados para teste. O segundo, o coeficiente de determinação, é uma medida estatística que indica quão bem os dados observados se ajustam a um modelo de regressão.
 
 Com o modelo finalmete escolhido, determinamos que o filme **The Shawshank Redemption** com as seguintes caracteristicas  
 
@@ -66,6 +66,6 @@ decency.',
 'No_of_Votes': 2343110,
 'Gross': '28,341,469'}
 
-teria uma nota de IMDb de **9,1**.
+teria uma nota de IMDb de **8,8**.
 
 O arquivo do modelo usado para a previsão é **modelo_imdb.pkl**. O exemplo de como usar esse arquivo para fazer predições do Rating IMDb pode ser encontrado na última seção do arquivo **desafio.ipynb**.
