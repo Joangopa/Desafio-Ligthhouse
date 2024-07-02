@@ -1,5 +1,15 @@
 # Desafio-Ligthhouse
 
+## Distribuição dos arquivos
+
+Neste projeto, apresentamos os seguintes arquivos:
+
+- desafio_indicium_imdb.csv: Base de dados a ser usada no projeto.
+- desafio.ipynb: Este é nosso arquivo principal, onde se encontra a análise exploratória e o tratamento dos dados, além da implementação de um modelo preditivo que busca determinar o Rating IMDb do filme a partir de algumas informações do mesmo.
+- modelo_imdb.pkl: Arquivo contendo o modelo preditivo escolhido.
+- version_info.txt: Neste arquivo, encontram-se as informações sobre as bibliotecas usadas no projeto.
+- requirements.txt: Arquivo que será usado para a instalação das bibliotecas nas versões usadas neste projeto.
+
 ## Instruções de Instalação
 
 Para instalar os pacotes listados no `requirements.txt`, você precisa do Python 3.12.3 instalado em seu sistema.
